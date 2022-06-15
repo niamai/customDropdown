@@ -11,8 +11,50 @@
 
   <body>
     <div class="main"><span>main</span></div>
-    <div class="side"></div>
+    <div class="side">
+      <div class="custom_select">
+        <div class="sel_head" data-name="sel1">
+          <span>div1</span>
+        </div>
+        <ul>
+          <li><label><input type="radio" name="sel1" value="1"><span>eins Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Perspiciatis molestiae earum, veritatis nam accusantium ullam facere porro optio
+                ratione, quaerat nostrum. Culpa quod labore, blanditiis architecto quae fugiat. Minima,
+                exercitationem.</span></label></li>
+          <li><label><input type="radio" name="sel1" value="2"><span>zwei</span></label></li>
+          <li><label><input type="radio" name="sel1" value="3"><span>drei</span></label></li>
+          <li><label><input type="radio" name="sel1" value="4"><span>vier</span></label></li>
+          <li><label><input type="radio" name="sel1" value="5"><span>fünf</span></label></li>
+          <li><label><input type="radio" name="sel1" value="6"><span>sechs</span></label></li>
+        </ul>
+      </div>
+      <div class="custom_select">
+        <div class="sel_head" data-name="sel2">
+          <span>div2</span>
+        </div>
+        <ul>
+          <li><label><input type="radio" name="sel2" value="1"><span>eins</span></label></li>
+          <li><label><input type="radio" name="sel2" value="2"><span>zwei</span></label></li>
+          <li><label><input type="radio" name="sel2" value="3"><span>drei</span></label></li>
+          <li><label><input type="radio" name="sel2" value="4"><span>vier</span></label></li>
+          <li><label><input type="radio" name="sel2" value="5"><span>fünf</span></label></li>
+          <li><label><input type="radio" name="sel2" value="6"><span>sechs</span></label></li>
+        </ul>
+      </div>
+      <div><span>div3</span></div>
+      <div><span>div4</span></div>
+    </div>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!-- <script>
+    $(".sel_head + ul li input").click(function ()
+    {
+      var text = $(".sel_head + ul li input:checked + span").text();
+      console.log(text);
+      // $(".sel_head span").text() = text;
+    });
+  </script> -->
   <script src="customDropdown.js"></script>
 
 </html>

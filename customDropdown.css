@@ -17,6 +17,7 @@ body
 {
   display: flex;
   flex: 1;
+  font-size: 2rem;
 }
 .main
 {
@@ -29,6 +30,61 @@ body
 }
 .side
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   width: 400px;
   background-color: plum;
+  padding: 2rem;
+}
+/* .custom_select
+{
+  display: flex;
+  flex-direction: column;
+} */
+.sel_head
+{
+  display: flex;
+  border: .2rem solid blueviolet;
+  padding: 1rem 2rem;
+}
+.sel_head span
+{
+  display: flex;
+  flex: 1;
+}
+.sel_head::after
+{
+  content: "";
+  width: 1rem;
+  height: 0.8rem;
+  background-color: black;
+  -webkit-clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+          justify-self: right;
+          align-self: center;
+}
+.sel_head + ul li input:checked + span
+{
+  background-color: aquamarine;
+}
+input[type=radio]
+{
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.sel_head
+{
+  position: relative;
+}
+.sel_head + ul
+{
+  position: absolute;
+  background-color: lightpink;
+  /* display: none; */
+}
+li 
+{
+  list-style: none;
 }

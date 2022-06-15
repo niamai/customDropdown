@@ -1,0 +1,34 @@
+:root
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 10px;
+}
+*,*::before,*::after
+{
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: var(--drk_grey) var(--lgt_grey_border);
+}
+body
+{
+  display: flex;
+  flex: 1;
+}
+.main
+{
+  display: grid;
+  flex: 1;
+  border: .5rem solid blueviolet;
+  background-color: aqua;
+  place-items: center;
+  font-size: 3rem;
+}
+.side
+{
+  width: 400px;
+  background-color: plum;
+}
